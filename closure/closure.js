@@ -51,3 +51,48 @@ function z(){
     x();
 }
 z();
+
+
+
+
+
+
+
+function x(){
+    for(var i=1; i<=5; i++){
+        setTimeout(function(){
+            console.log(i);
+        }, i*1000);
+    };
+    console.log(`I love JavaScript`);
+}
+x();
+
+
+
+function x(){
+    for(var i=1; i<=5; i++){
+       function closure(x){
+        setTimeout(function(){
+            console.log(x);
+        }, i*1000);
+       }
+       closure(i)
+    };
+    console.log(`I love JavaScript`);
+}
+x();
+
+
+
+
+
+function x(){
+    for(let i=1; i<=5; i++){
+        setTimeout(function(){
+            console.log(i);
+        }, i*1000);
+    };
+    console.log(`I love JavaScript`);
+}
+x();
