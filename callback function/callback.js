@@ -14,6 +14,15 @@ x(function y(){
 
 
 
+console.log("Start")
+
+setTimeout(() => {
+    console.log("Timer");
+},0);
+
+console.log("End");
+
+
 // Event Listeners
 
 function attachEvent(){
