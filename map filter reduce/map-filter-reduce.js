@@ -117,7 +117,7 @@ const findOutput = users.reduce((acc,cur)=>{
     }
     else{
         acc[cur.age] = 1;
-    }
+    } 
     return acc;
 },{})
 
