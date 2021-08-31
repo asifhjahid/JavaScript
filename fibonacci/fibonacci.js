@@ -8,6 +8,8 @@
 
 //iterative way
 
+// for loop
+
 let fibonac = [0,1];
 
 for(let i= 2; i<= 10; i++){
@@ -17,9 +19,7 @@ for(let i= 2; i<= 10; i++){
 console.log(fibonac);
 
 
-
-
-//recursive way
+//function
 
 function fibonacci(n){
     let fibo = [0,1];
@@ -29,5 +29,47 @@ function fibonacci(n){
     return fibo;
 }
 
-let fiboResult = fibonacci(10);
+let fibonaResult = fibonacci(10);
+console.log(fibonaResult);
+
+
+
+
+//recursive way
+
+function recursiveFibo(n){
+    if(n==0){
+        return 0;
+    }
+    else if(n==1){
+        return 1;
+    }
+    else{
+        return recursiveFibo(n-1) + recursiveFibo(n-2);
+    }
+    
+}
+
+let recursiveFiboResult = recursiveFibo(10);
+console.log(recursiveFiboResult);
+
+
+
+function fiboseries(n){
+    if(n==0){
+        return [0]
+    }
+    else if(n==1){
+        return [0,1]
+    }
+    else{
+        let fibonacc = fiboseries(n-1);
+        let nextFibo = fibonacc[n-1] + fibonacc[n-2];
+        fibonacc.push(nextFibo);
+        return fibonacc;
+    }
+
+}
+
+let fiboResult = fiboseries(10);
 console.log(fiboResult);
