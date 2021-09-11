@@ -1,0 +1,24 @@
+{
+    "myFriends": [
+      {
+        "firstName": "Asif",
+        "lastName": "Hasan",
+        "age": 26,
+        "language": [
+          "Bangla",
+          "English",
+          "Spanish"
+        ],
+        "friends": [
+          {
+            "name": "Sabbir",
+            "age": "25"
+          },
+          {
+            "name": "Rayhan",
+            "age": "27"
+          }
+        ]
+      }
+    ]
+  }
